@@ -19,6 +19,8 @@ namespace CariHesapTakibi
             InitializeComponent();
         }
 
+        public CariHesap secili { get; set; }
+
         private void Cari_Hesabı_Load(object sender, EventArgs e)
         {/*
             HesapHareketRepository hhr = new HesapHareketRepository();
@@ -29,22 +31,23 @@ namespace CariHesapTakibi
             lbl_evrakcinsi.Text = hh.Evrak.ToString();
             lbl_islem.Text = hh.IslemTipi.ToString();*/
             HesapHareketRepository hhr = new HesapHareketRepository();
-
-            foreach (var item in hhr.Liste)
-            {
-                HesapHareketListe hhl = new HesapHareketListe();
-             
-                lbl_evrakcinsi.Text = item.Evrak.EvrakCinsi.ToString();
-                lbl_carihesap.Text = item.CariHesabi.Unvan.ToString();
-                lbl_evrakno.Text = item.Evrak.EvrakNo.ToString();
-                lbl_islem.Text = item.IslemTipi.ToString();
-                lbl_evraktipi.Text = item.Evrak.EvrakTipi.ToString();
-                lbl_vadetarihi.Text = item.VadeTarihi.ToString();
-                lbl_vadegünü.Text = item.VadeGunu.ToString();
-                lbl_tutar.Text = item.Tutar.ToString();
-                lbl_islemtarihi.Text = item.IslemTarihi.ToString();
-                
-            }
+        
+            //foreach (var item in hhr.Liste)
+            //{
+            //    if (item is secili)
+            //    {
+                    lbl_evrakcinsi.Text = secili.EvrakCinsi.ToString();
+                    lbl_carihesap.Text = secili.CariHesabi.Unvan.ToString();
+                    lbl_evrakno.Text = secili.Evrak.EvrakNo.ToString();
+                    lbl_islem.Text = secili.IslemTipi.ToString();
+                    lbl_evraktipi.Text = secili.Evrak.EvrakTipi.ToString();
+                    lbl_vadetarihi.Text = secili.VadeTarihi.ToString();
+                    lbl_vadegünü.Text = secili.VadeGunu.ToString();
+                    lbl_tutar.Text = secili.Tutar.ToString();
+                    lbl_islemtarihi.Text = secili.IslemTarihi.ToString();
+            //    }
+               
+            //}
 
         }
     }
