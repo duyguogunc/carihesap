@@ -18,16 +18,13 @@ namespace CariHesapTakibi
         {
             InitializeComponent();
         }
+        public CariHesap secili;
+
+        public CariHesap secili { get; set; }
 
         private void Cari_Hesabı_Load(object sender, EventArgs e)
-        {/*
-            HesapHareketRepository hhr = new HesapHareketRepository();
-            hhr.CariGoruntule();
-            HesapHareket hh = new HesapHareket();
+        {
 
-            lbl_carihesap.Text = hh.CariHesabi.ToString();
-            lbl_evrakcinsi.Text = hh.Evrak.ToString();
-            lbl_islem.Text = hh.IslemTipi.ToString();*/
             HesapHareketRepository hhr = new HesapHareketRepository();
 
             foreach (var item in hhr.Liste)
@@ -45,6 +42,8 @@ namespace CariHesapTakibi
                 lbl_islemtarihi.Text = item.IslemTarihi.ToString();
                 
             }
+
+
 
         }
     }

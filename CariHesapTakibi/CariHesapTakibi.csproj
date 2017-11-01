@@ -64,6 +64,12 @@
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CariHesapHareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariHesapHareketleri.Designer.cs">
+      <DependentUpon>CariHesapHareketleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="CariHesapListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,12 +127,21 @@
     <Compile Include="YeniCariHesap.Designer.cs">
       <DependentUpon>YeniCariHesap.cs</DependentUpon>
     </Compile>
+    <Compile Include="YeniCariHesapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniCariHesapDuzenle.Designer.cs">
+      <DependentUpon>YeniCariHesapDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="YeniHesapHareketi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="YeniHesapHareketi.Designer.cs">
       <DependentUpon>YeniHesapHareketi.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CariHesapHareketleri.resx">
+      <DependentUpon>CariHesapHareketleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CariHesapListe.resx">
       <DependentUpon>CariHesapListe.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YeniCariHesap.resx">
       <DependentUpon>YeniCariHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniCariHesapDuzenle.resx">
+      <DependentUpon>YeniCariHesapDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YeniHesapHareketi.resx">
       <DependentUpon>YeniHesapHareketi.cs</DependentUpon>
