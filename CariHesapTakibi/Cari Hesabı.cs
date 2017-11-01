@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CariHesapTakibi.Resources
+namespace CariHesapTakibi
 {
     public partial class Cari_Hesabı : Form
     {
