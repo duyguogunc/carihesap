@@ -76,5 +76,10 @@ namespace CariHesapTakibi
             HesapHareketDüzenle hhd = new HesapHareketDüzenle();
             hhd.Show();
         }
+
+        private void btn_CariHesabi_Click(object sender, EventArgs e)
+        {
+            new Cari_Hesabı().Show();
+        }
     }
 }
