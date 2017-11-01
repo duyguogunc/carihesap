@@ -34,23 +34,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Guncelle = new System.Windows.Forms.Button();
+            this.nm_Tutar = new System.Windows.Forms.NumericUpDown();
+            this.rb_NakitTediye = new System.Windows.Forms.RadioButton();
+            this.rb_NakitTahsilat = new System.Windows.Forms.RadioButton();
+            this.dtp_IslemTarihi = new System.Windows.Forms.DateTimePicker();
+            this.dtp_VadeTarihi = new System.Windows.Forms.DateTimePicker();
+            this.nm_VadeGunu = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.txt_EvrakNo = new System.Windows.Forms.TextBox();
+            this.cb_EvrakTipi = new System.Windows.Forms.ComboBox();
+            this.cb_EvrakCinsi = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cb_CariHesap = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_Tutar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_VadeGunu)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 70);
+            this.label2.Location = new System.Drawing.Point(32, 66);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 17);
@@ -114,87 +114,71 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "VadeGünü";
             // 
-            // comboBox1
+            // btn_Guncelle
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 16);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
-            this.comboBox1.TabIndex = 6;
+            this.btn_Guncelle.Location = new System.Drawing.Point(609, 293);
+            this.btn_Guncelle.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Guncelle.Name = "btn_Guncelle";
+            this.btn_Guncelle.Size = new System.Drawing.Size(100, 28);
+            this.btn_Guncelle.TabIndex = 14;
+            this.btn_Guncelle.Text = "Güncelle";
+            this.btn_Guncelle.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // nm_Tutar
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(144, 70);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(160, 23);
-            this.numericUpDown1.TabIndex = 7;
+            this.nm_Tutar.Location = new System.Drawing.Point(144, 64);
+            this.nm_Tutar.Margin = new System.Windows.Forms.Padding(4);
+            this.nm_Tutar.Name = "nm_Tutar";
+            this.nm_Tutar.Size = new System.Drawing.Size(160, 23);
+            this.nm_Tutar.TabIndex = 7;
             // 
-            // radioButton1
+            // rb_NakitTediye
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(144, 132);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 21);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nakit Tediye";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_NakitTediye.AutoSize = true;
+            this.rb_NakitTediye.Location = new System.Drawing.Point(144, 132);
+            this.rb_NakitTediye.Margin = new System.Windows.Forms.Padding(4);
+            this.rb_NakitTediye.Name = "rb_NakitTediye";
+            this.rb_NakitTediye.Size = new System.Drawing.Size(105, 21);
+            this.rb_NakitTediye.TabIndex = 8;
+            this.rb_NakitTediye.TabStop = true;
+            this.rb_NakitTediye.Text = "Nakit Tediye";
+            this.rb_NakitTediye.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_NakitTahsilat
             // 
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(270, 132);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(139, 21);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nakit Tahsilat";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_NakitTahsilat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rb_NakitTahsilat.Location = new System.Drawing.Point(270, 132);
+            this.rb_NakitTahsilat.Margin = new System.Windows.Forms.Padding(4);
+            this.rb_NakitTahsilat.Name = "rb_NakitTahsilat";
+            this.rb_NakitTahsilat.Size = new System.Drawing.Size(139, 21);
+            this.rb_NakitTahsilat.TabIndex = 9;
+            this.rb_NakitTahsilat.TabStop = true;
+            this.rb_NakitTahsilat.Text = "Nakit Tahsilat";
+            this.rb_NakitTahsilat.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtp_IslemTarihi
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(144, 192);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 23);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtp_IslemTarihi.Location = new System.Drawing.Point(144, 192);
+            this.dtp_IslemTarihi.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_IslemTarihi.Name = "dtp_IslemTarihi";
+            this.dtp_IslemTarihi.Size = new System.Drawing.Size(265, 23);
+            this.dtp_IslemTarihi.TabIndex = 10;
             // 
-            // dateTimePicker2
+            // dtp_VadeTarihi
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(144, 246);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(265, 23);
-            this.dateTimePicker2.TabIndex = 11;
+            this.dtp_VadeTarihi.Location = new System.Drawing.Point(144, 246);
+            this.dtp_VadeTarihi.Margin = new System.Windows.Forms.Padding(4);
+            this.dtp_VadeTarihi.Name = "dtp_VadeTarihi";
+            this.dtp_VadeTarihi.Size = new System.Drawing.Size(265, 23);
+            this.dtp_VadeTarihi.TabIndex = 11;
             // 
-            // numericUpDown2
+            // nm_VadeGunu
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(144, 298);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(160, 23);
-            this.numericUpDown2.TabIndex = 12;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(440, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(267, 261);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Evraklar";
+            this.nm_VadeGunu.Location = new System.Drawing.Point(144, 298);
+            this.nm_VadeGunu.Margin = new System.Windows.Forms.Padding(4);
+            this.nm_VadeGunu.Name = "nm_VadeGunu";
+            this.nm_VadeGunu.Size = new System.Drawing.Size(160, 23);
+            this.nm_VadeGunu.TabIndex = 12;
             // 
             // label7
             // 
@@ -226,41 +210,57 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Evrak Cinsi";
             // 
-            // textBox1
+            // txt_EvrakNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 60);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 23);
-            this.textBox1.TabIndex = 3;
+            this.txt_EvrakNo.Location = new System.Drawing.Point(99, 60);
+            this.txt_EvrakNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_EvrakNo.Name = "txt_EvrakNo";
+            this.txt_EvrakNo.Size = new System.Drawing.Size(160, 23);
+            this.txt_EvrakNo.TabIndex = 3;
             // 
-            // comboBox2
+            // cb_EvrakTipi
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(105, 133);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 24);
-            this.comboBox2.TabIndex = 4;
+            this.cb_EvrakTipi.FormattingEnabled = true;
+            this.cb_EvrakTipi.Location = new System.Drawing.Point(99, 137);
+            this.cb_EvrakTipi.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_EvrakTipi.Name = "cb_EvrakTipi";
+            this.cb_EvrakTipi.Size = new System.Drawing.Size(160, 24);
+            this.cb_EvrakTipi.TabIndex = 4;
             // 
-            // comboBox3
+            // cb_EvrakCinsi
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(109, 212);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(160, 24);
-            this.comboBox3.TabIndex = 5;
+            this.cb_EvrakCinsi.FormattingEnabled = true;
+            this.cb_EvrakCinsi.Location = new System.Drawing.Point(99, 219);
+            this.cb_EvrakCinsi.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_EvrakCinsi.Name = "cb_EvrakCinsi";
+            this.cb_EvrakCinsi.Size = new System.Drawing.Size(160, 24);
+            this.cb_EvrakCinsi.TabIndex = 5;
             // 
-            // button1
+            // groupBox1
             // 
-            this.button1.Location = new System.Drawing.Point(644, 294);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Güncelle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.cb_EvrakCinsi);
+            this.groupBox1.Controls.Add(this.cb_EvrakTipi);
+            this.groupBox1.Controls.Add(this.txt_EvrakNo);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Location = new System.Drawing.Point(440, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(267, 261);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Evraklar";
+            // 
+            // cb_CariHesap
+            // 
+            this.cb_CariHesap.FormattingEnabled = true;
+            this.cb_CariHesap.Location = new System.Drawing.Point(144, 16);
+            this.cb_CariHesap.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_CariHesap.Name = "cb_CariHesap";
+            this.cb_CariHesap.Size = new System.Drawing.Size(160, 24);
+            this.cb_CariHesap.TabIndex = 6;
             // 
             // HesapHareketDüzenle
             // 
@@ -268,15 +268,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(751, 329);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Guncelle);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.nm_VadeGunu);
+            this.Controls.Add(this.dtp_VadeTarihi);
+            this.Controls.Add(this.dtp_IslemTarihi);
+            this.Controls.Add(this.rb_NakitTahsilat);
+            this.Controls.Add(this.rb_NakitTediye);
+            this.Controls.Add(this.nm_Tutar);
+            this.Controls.Add(this.cb_CariHesap);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -284,12 +284,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HesapHareketDüzenle";
             this.Text = "HesapHareketDüzenle";
             this.Load += new System.EventHandler(this.HesapHareketDüzenle_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_Tutar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nm_VadeGunu)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -305,20 +305,20 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btn_Guncelle;
+        private System.Windows.Forms.NumericUpDown nm_Tutar;
+        private System.Windows.Forms.RadioButton rb_NakitTediye;
+        private System.Windows.Forms.RadioButton rb_NakitTahsilat;
+        private System.Windows.Forms.DateTimePicker dtp_IslemTarihi;
+        private System.Windows.Forms.DateTimePicker dtp_VadeTarihi;
+        private System.Windows.Forms.NumericUpDown nm_VadeGunu;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_EvrakNo;
+        private System.Windows.Forms.ComboBox cb_EvrakTipi;
+        private System.Windows.Forms.ComboBox cb_EvrakCinsi;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cb_CariHesap;
     }
 }
