@@ -73,8 +73,7 @@ namespace CariHesapTakibi
 
         private void btn_Duzenle_Click(object sender, EventArgs e)
         {
-            HesapHareketDüzenle hhd = new HesapHareketDüzenle();
-            hhd.Show();
+            Navigation.Show(typeof(HesapHareketDüzenle));
         }
 
         private void btn_CariHesabi_Click(object sender, EventArgs e)

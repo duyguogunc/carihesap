@@ -24,7 +24,7 @@ namespace BusinessLogic
 
             //CariHesap.json
             //HesapHareket.json
-
+            
             string dosyaAdi = typeof(T).ToString() + ".json";
             File.WriteAllText(dosyaAdi, ceviri);
         }

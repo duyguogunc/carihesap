@@ -16,6 +16,6 @@ namespace BusinessLogic
 
         List<T> GetAll();
 
-        T GetRecord();
+        T GetRecord(Predicate<T> kosul);
     }
 }

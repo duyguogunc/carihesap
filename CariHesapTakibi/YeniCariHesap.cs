@@ -70,6 +70,7 @@ namespace CariHesapTakibi
             long.TryParse(msk_TC.Text, out gecici);
             t.TCKimlikNo = gecici;
             t.KDVNo = txt_KDVNo.Text;
+            t.VergiDairesi = txt_VergiDairesi.Text;
             firmaKaydi.TicariBilgiler = t;
             #endregion
 
@@ -86,6 +87,7 @@ namespace CariHesapTakibi
             firmaKaydi.KefilBilgileri = new Kefil();
             firmaKaydi.KefilBilgileri.Adres = txt_KefilAdres.Text;
             firmaKaydi.KefilBilgileri.AdSoyad = txt_KefilAdSoyad.Text;
+            firmaKaydi.KefilBilgileri.Telefon = msk_KefilTel.Text;
             #endregion
 
             #region Banka
