@@ -44,6 +44,7 @@
     <Compile Include="Models\Ticari.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\CariHesapViewModel.cs" />
+    <Compile Include="ViewModels\HesapHareketiViewModel.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -82,6 +82,12 @@
     <Compile Include="GrupListe.Designer.cs">
       <DependentUpon>GrupListe.cs</DependentUpon>
     </Compile>
+    <Compile Include="HesapHareketDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHareketDüzenle.Designer.cs">
+      <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="HesapHareketListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GrupListe.resx">
       <DependentUpon>GrupListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapHareketDüzenle.resx">
+      <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HesapHareketListe.resx">
       <DependentUpon>HesapHareketListe.cs</DependentUpon>
