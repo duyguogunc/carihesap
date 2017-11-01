@@ -72,8 +72,22 @@ namespace CariHesapTakibi
         }
 
         private void btn_Duzenle_Click(object sender, EventArgs e)
-        {
-            Navigation.Show(typeof(HesapHareketDüzenle));
+        { 
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Düzenlenecek Kişiyi Seçiniz");
+            }
+            else
+            {
+                int chhno = (int)dataGridView1.SelectedRows[0].Cells["CHHNo"].Value;
+                HesapHareketRepository hhduzenle = new HesapHareketRepository();
+                
+                HesapHareket hh = (HesapHareket)hhduzenle.GetRecord(x => x.CHHNo==chhno);
+                HesapHareketDüzenle form = new HesapHareketDüzenle();
+                form.SecilenHesap=hh;
+                form.Show();
+            }
+            
         }
 
         private void btn_CariHesabi_Click(object sender, EventArgs e)

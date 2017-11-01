@@ -48,11 +48,12 @@ namespace Entity.Models
         public DateTime IslemTarihi { get; set; }
         public DateTime VadeTarihi { get; set; }
         public Evrak Evrak { get; set; }
+        public int _vadeGunu;
         public int VadeGunu
         {
             get
             {
-                return 0;
+                return _vadeGunu;
             }
             set
             {

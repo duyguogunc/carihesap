@@ -129,6 +129,11 @@
             // nm_vadegun
             // 
             this.nm_vadegun.Location = new System.Drawing.Point(182, 295);
+            this.nm_vadegun.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.nm_vadegun.Name = "nm_vadegun";
             this.nm_vadegun.Size = new System.Drawing.Size(149, 29);
             this.nm_vadegun.TabIndex = 28;

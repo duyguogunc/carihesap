@@ -123,11 +123,17 @@
             this.btn_Guncelle.TabIndex = 14;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_Guncelle_Click);
             // 
             // nm_Tutar
             // 
             this.nm_Tutar.Location = new System.Drawing.Point(144, 64);
             this.nm_Tutar.Margin = new System.Windows.Forms.Padding(4);
+            this.nm_Tutar.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
             this.nm_Tutar.Name = "nm_Tutar";
             this.nm_Tutar.Size = new System.Drawing.Size(160, 23);
             this.nm_Tutar.TabIndex = 7;
@@ -298,27 +304,26 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btn_Guncelle;
-        private System.Windows.Forms.NumericUpDown nm_Tutar;
-        private System.Windows.Forms.RadioButton rb_NakitTediye;
-        private System.Windows.Forms.RadioButton rb_NakitTahsilat;
-        private System.Windows.Forms.DateTimePicker dtp_IslemTarihi;
-        private System.Windows.Forms.DateTimePicker dtp_VadeTarihi;
-        private System.Windows.Forms.NumericUpDown nm_VadeGunu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_EvrakNo;
         private System.Windows.Forms.ComboBox cb_EvrakTipi;
         private System.Windows.Forms.ComboBox cb_EvrakCinsi;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cb_CariHesap;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Button btn_Guncelle;
+        public System.Windows.Forms.NumericUpDown nm_Tutar;
+        public System.Windows.Forms.RadioButton rb_NakitTediye;
+        public System.Windows.Forms.RadioButton rb_NakitTahsilat;
+        public System.Windows.Forms.DateTimePicker dtp_IslemTarihi;
+        public System.Windows.Forms.DateTimePicker dtp_VadeTarihi;
+        public System.Windows.Forms.NumericUpDown nm_VadeGunu;
+        public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.ComboBox cb_CariHesap;
     }
 }
