@@ -52,6 +52,7 @@ namespace CariHesapTakibi
             HesapHareket hhkayit = new HesapHareket();
             hhkayit.CariKodu = Convert.ToInt32(cmb_CariHesap.SelectedValue);
             hhkayit.CariHesabi = (CariHesap)cmb_CariHesap.SelectedItem;
+            hhkayit.CariKodu = hhkayit.CariHesabi.CariKod;
             hhkayit.Tutar = nm_Tutar.Value;
             if (rb_NakitTahsilat.Checked)
             {

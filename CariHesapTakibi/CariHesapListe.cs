@@ -25,11 +25,14 @@ namespace CariHesapTakibi
             dataGridView1.DataSource = null;
             //dataGridView1.DataSource = cariYonetici.GetAll();
             dataGridView1.DataSource = cariYonetici.CariRapor();
+
         }
 
         private void CariHesapListe_Load(object sender, EventArgs e)
         {
             RefreshForm();
+        
+
         }
 
         private void btn_YeniCariHesap_Click(object sender, EventArgs e)
@@ -45,6 +48,7 @@ namespace CariHesapTakibi
                 MessageBox.Show("Silinecek cariyi seçin");
             else
             {
+
             //Değilse 
             CariHesapRepository cyonetici = new CariHesapRepository();
                 //cyonetici uzerinden ilgili kaydı silelim
@@ -57,8 +61,31 @@ namespace CariHesapTakibi
                 cyonetici.Delete(silinecek);
                 //RefreshForm metodu çağırılsın
                 RefreshForm();
+
             }
 
+        }
+
+        private void btn_HesapHareketleri_Click(object sender, EventArgs e)
+        {
+            
+            CariHesapRepository ch = new CariHesapRepository(); 
+            var id = (int)dataGridView1.SelectedRows[0].Cells["CariKod"].Value;
+            CariHesap aktarilacak = ch.Liste.Find(x => x.CariKod == id);
+
+            CariHesapHareketleri chh = new CariHesapHareketleri();
+            chh.gelenCari = aktarilacak;
+            chh.Show();
+
+
+           
+            
+            
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
         }
 
         private void btn_Duzenle_Click(object sender, EventArgs e)

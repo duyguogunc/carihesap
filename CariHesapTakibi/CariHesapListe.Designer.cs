@@ -95,6 +95,7 @@
             this.btn_HesapHareketleri.TabIndex = 1;
             this.btn_HesapHareketleri.Text = "Hesap Hareketleri";
             this.btn_HesapHareketleri.UseVisualStyleBackColor = true;
+            this.btn_HesapHareketleri.Click += new System.EventHandler(this.btn_HesapHareketleri_Click);
             // 
             // btn_YeniCariHesap
             // 
@@ -112,8 +113,10 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 53);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(566, 286);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // CariHesapListe
             // 
