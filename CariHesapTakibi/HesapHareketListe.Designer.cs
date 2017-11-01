@@ -46,6 +46,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 53);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(570, 286);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -85,6 +86,7 @@
             this.btn_Duzenle.TabIndex = 3;
             this.btn_Duzenle.Text = "Düzenle";
             this.btn_Duzenle.UseVisualStyleBackColor = true;
+            this.btn_Duzenle.Click += new System.EventHandler(this.btn_Duzenle_Click);
             // 
             // btn_Sil
             // 
@@ -104,6 +106,7 @@
             this.btn_CariHesabi.TabIndex = 1;
             this.btn_CariHesabi.Text = "Cari Hesabı";
             this.btn_CariHesabi.UseVisualStyleBackColor = true;
+            this.btn_CariHesabi.Click += new System.EventHandler(this.btn_CariHesabi_Click);
             // 
             // btn_YeniHesapHareketi
             // 
@@ -134,13 +137,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Duzenle;
         private System.Windows.Forms.Button btn_Sil;
         private System.Windows.Forms.Button btn_CariHesabi;
         private System.Windows.Forms.Button btn_YeniHesapHareketi;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

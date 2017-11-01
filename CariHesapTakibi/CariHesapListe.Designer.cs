@@ -75,6 +75,7 @@
             this.btn_Duzenle.TabIndex = 3;
             this.btn_Duzenle.Text = "Düzenle";
             this.btn_Duzenle.UseVisualStyleBackColor = true;
+            this.btn_Duzenle.Click += new System.EventHandler(this.btn_Duzenle_Click);
             // 
             // btn_Sil
             // 
