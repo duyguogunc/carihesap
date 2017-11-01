@@ -57,5 +57,11 @@ namespace CariHesapTakibi
                 RefreshForm();
             }
         }
+
+        private void btn_Duzenle_Click(object sender, EventArgs e)
+        {
+            HesapHareketDüzenle hhd = new HesapHareketDüzenle();
+            hhd.Show();
+        }
     }
 }
