@@ -62,7 +62,7 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
-        public List<HesapHareketiViewModel> HesapHareketiRapor()
+ public List<HesapHareketiViewModel> HesapHareketiRapor()
         {
             return Liste.Select(x => new HesapHareketiViewModel()
             {
@@ -73,18 +73,6 @@ namespace BusinessLogic
                 IslemTipi = x.IslemTipi,
             }).ToList();
         }
-        public void CariGoruntule()
-        {
-            Liste.Select(x => new HesapHareket()
-            {
-                CHHNo = x.CHHNo,
-                CariKodu = x.CariKodu,
-                CariHesabi = x.CariHesabi,
-                IslemTarihi = x.IslemTarihi,
-                VadeTarihi = x.VadeTarihi,
-                Evrak = x.Evrak,
-                VadeGunu = x.VadeGunu,
-            }).ToList();
-        }
+       
     }
 }
