@@ -62,6 +62,17 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
+        public List<HesapHareketiViewModel> HesapHareketiRapor()
+        {
+            return Liste.Select(x => new HesapHareketiViewModel()
+            {
+                CHHNo = x.CHHNo,
+                CariHesabi = x.CariHesabi.Unvan,
+                IslemTarihi = x.IslemTarihi,
+                Tutar = x.Tutar,
+                IslemTipi = x.IslemTipi,
+            }).ToList();
+        }
         public void CariGoruntule()
         {
             Liste.Select(x => new HesapHareket()

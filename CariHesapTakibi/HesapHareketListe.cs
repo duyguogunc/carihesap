@@ -31,7 +31,7 @@ namespace CariHesapTakibi
         {
             HesapHareketRepository hhr = new HesapHareketRepository();
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = hhr.GetAll();
+            dataGridView1.DataSource = hhr.HesapHareketiRapor();
         }
 
         private void btn_Sil_Click(object sender, EventArgs e)
