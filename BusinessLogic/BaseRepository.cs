@@ -30,14 +30,13 @@ namespace BusinessLogic
             return Liste;
         }
 
-        public T GetRecord()
+        public T GetRecord(Predicate<T> kosul)
         {
-            throw new NotImplementedException();
+            return Liste.Find(kosul);
         }
 
         public void Update(T record)
         {
-            Liste.Remove(record);
             Save();
         }
     }

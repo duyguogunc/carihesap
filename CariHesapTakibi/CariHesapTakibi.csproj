@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -67,6 +82,12 @@
     <Compile Include="GrupListe.Designer.cs">
       <DependentUpon>GrupListe.cs</DependentUpon>
     </Compile>
+    <Compile Include="HesapHareketDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHareketDüzenle.Designer.cs">
+      <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="HesapHareketListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +102,12 @@
     </Compile>
     <Compile Include="Raporlar.Designer.cs">
       <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari Hesabı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari Hesabı.Designer.cs">
+      <DependentUpon>Cari Hesabı.cs</DependentUpon>
     </Compile>
     <Compile Include="Yedekler.cs">
       <SubType>Form</SubType>
@@ -115,6 +142,9 @@
     <EmbeddedResource Include="GrupListe.resx">
       <DependentUpon>GrupListe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HesapHareketDüzenle.resx">
+      <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HesapHareketListe.resx">
       <DependentUpon>HesapHareketListe.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="Raporlar.resx">
       <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari Hesabı.resx">
+      <DependentUpon>Cari Hesabı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yedekler.resx">
       <DependentUpon>Yedekler.cs</DependentUpon>
@@ -168,6 +201,18 @@
       <Project>{E1B86A9A-CC2D-4C08-80D8-49C0D76D23BD}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

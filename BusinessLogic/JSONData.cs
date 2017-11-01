@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace BusinessLogic
 {
-    //test
+    //test/
     //JavaScriptSerializer tarafından üretilebilir
     //JSON : JavaScript Object Notation
     // {Ad: "Duygu", Meslek: "Egitmen"}
