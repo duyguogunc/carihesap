@@ -31,7 +31,8 @@ namespace BusinessLogic
             return liste;
              */
 
-            return Liste.Select(x => new CariHesapViewModel() {
+            return Liste.Select(x => new CariHesapViewModel()
+            {
                 CariKod = x.CariKod,
                 IlgiliKisi = x.IletisimBilgileri.IlgiliKisi,
                 Resim = x.Resim,
@@ -40,6 +41,10 @@ namespace BusinessLogic
             }).ToList();
         }
     }
+    
+
+        
+    
 
     public class CariGrupRepository : BaseRepository<CariGrup>
     {
@@ -62,5 +67,6 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
+      
     }
 }

@@ -51,6 +51,7 @@ namespace CariHesapTakibi
         {
             HesapHareket hhkayit = new HesapHareket();
             hhkayit.CariHesabi = (CariHesap)cmb_CariHesap.SelectedItem;
+            hhkayit.CariKodu = hhkayit.CariHesabi.CariKod;
             hhkayit.Evrak = new Evrak();
             hhkayit.Evrak.EvrakTipi =(EvrakTipi) cmb_EvrakTip.SelectedIndex + 1;
             hhkayit.Evrak.EvrakCinsi = (EvrakCinsi)cmb_EvrakCins.SelectedIndex + 1;
