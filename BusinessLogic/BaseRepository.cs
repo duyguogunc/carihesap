@@ -37,7 +37,8 @@ namespace BusinessLogic
 
         public void Update(T record)
         {
-            throw new NotImplementedException();
+            Liste.Remove(record);
+            Save();
         }
     }
 }

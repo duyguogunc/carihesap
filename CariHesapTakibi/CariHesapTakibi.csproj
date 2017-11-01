@@ -94,6 +94,12 @@
     <Compile Include="YeniCariHesap.Designer.cs">
       <DependentUpon>YeniCariHesap.cs</DependentUpon>
     </Compile>
+    <Compile Include="YeniCariHesapDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniCariHesapDuzenle.Designer.cs">
+      <DependentUpon>YeniCariHesapDuzenle.cs</DependentUpon>
+    </Compile>
     <Compile Include="YeniHesapHareketi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="YeniCariHesap.resx">
       <DependentUpon>YeniCariHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniCariHesapDuzenle.resx">
+      <DependentUpon>YeniCariHesapDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YeniHesapHareketi.resx">
       <DependentUpon>YeniHesapHareketi.cs</DependentUpon>
