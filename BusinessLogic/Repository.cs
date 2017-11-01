@@ -86,5 +86,6 @@ namespace BusinessLogic
                 VadeGunu = x.VadeGunu,
             }).ToList();
         }
+
     }
 }
