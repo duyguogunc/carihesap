@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace BusinessLogic
 {
-    //test
+    //test/
     //JavaScriptSerializer tarafından üretilebilir
     //JSON : JavaScript Object Notation
     // {Ad: "Duygu", Meslek: "Egitmen"}
@@ -24,7 +24,7 @@ namespace BusinessLogic
 
             //CariHesap.json
             //HesapHareket.json
-
+            
             string dosyaAdi = typeof(T).ToString() + ".json";
             File.WriteAllText(dosyaAdi, ceviri);
         }

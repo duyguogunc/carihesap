@@ -31,11 +31,24 @@ namespace CariHesapTakibi
         {
             HesapHareketRepository hhr = new HesapHareketRepository();
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = hhr.GetAll();
+            dataGridView1.DataSource = hhr.HesapHareketiRapor();
         }
 
         private void btn_Sil_Click(object sender, EventArgs e)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
             //Seçili satır sayısı 0 ise 
             //Bir uyarı verelim
             if (dataGridView1.SelectedRows.Count == 0)
@@ -56,6 +69,26 @@ namespace CariHesapTakibi
                 //RefreshForm metodu çağırılsın
                 RefreshForm();
             }
+        }
+
+        private void btn_Duzenle_Click(object sender, EventArgs e)
+        {
+            Navigation.Show(typeof(HesapHareketDüzenle));
+        }
+
+        private void btn_CariHesabi_Click(object sender, EventArgs e)
+        {
+            CariHesapRepository cariRep = new CariHesapRepository();
+            HesapHareketRepository hareketRep = new HesapHareketRepository();
+            Cari_Hesabı form = new Cari_Hesabı();
+            int CHHNo =(int) dataGridView1.SelectedRows[0].Cells[0].Value;
+            HesapHareket secilenHH = hareketRep.GetRecord(x => x.CHHNo == CHHNo);
+
+
+            form.secili = secilenHH.CariHesabi;
+
+
+            form.Show();
         }
     }
 }

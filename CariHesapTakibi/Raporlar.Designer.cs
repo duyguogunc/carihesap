@@ -51,7 +51,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(720, 373);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(571, 373);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -62,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(714, 94);
+            this.panel1.Size = new System.Drawing.Size(565, 94);
             this.panel1.TabIndex = 0;
             // 
             // comboBox1
@@ -84,7 +84,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Günlük Mizan";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -96,7 +95,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Aylık Mizan";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // dataGridView1
             // 
@@ -104,14 +102,14 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 103);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(714, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(565, 267);
             this.dataGridView1.TabIndex = 1;
             // 
             // Raporlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 373);
+            this.ClientSize = new System.Drawing.Size(571, 373);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.Margin = new System.Windows.Forms.Padding(6);
