@@ -18,7 +18,7 @@ namespace BusinessLogic
                 record.CariKod = 1;
             base.Add(record);
         }
-
+      
         public List<CariHesapViewModel> CariRapor()
         {
             /*
@@ -61,6 +61,19 @@ namespace BusinessLogic
             else
                 record.CHHNo = 1;
             base.Add(record);
+        }
+        public void CariGoruntule()
+        {
+            Liste.Select(x => new HesapHareket()
+            {
+                CHHNo = x.CHHNo,
+                CariKodu = x.CariKodu,
+                CariHesabi = x.CariHesabi,
+                IslemTarihi = x.IslemTarihi,
+                VadeTarihi = x.VadeTarihi,
+                Evrak = x.Evrak,
+                VadeGunu = x.VadeGunu,
+            }).ToList();
         }
     }
 }

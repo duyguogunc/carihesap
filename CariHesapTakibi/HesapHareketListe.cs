@@ -36,6 +36,19 @@ namespace CariHesapTakibi
 
         private void btn_Sil_Click(object sender, EventArgs e)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
             //Seçili satır sayısı 0 ise 
             //Bir uyarı verelim
             if (dataGridView1.SelectedRows.Count == 0)
