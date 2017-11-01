@@ -74,8 +74,9 @@ namespace CariHesapTakibi
                 CariHesapRepository cyonetici = new CariHesapRepository();
                 var id = (int)dataGridView1.SelectedRows[0].Cells["CariKod"].Value;
                 CariHesap duzenlenecek = cyonetici.Liste.Where(x => x.CariKod == id).First();
-                cyonetici.Delete(duzenlenecek);
+                //cyonetici.Delete(duzenlenecek);
                 YeniCariHesapDuzenle d = new YeniCariHesapDuzenle();
+                d.CariKod = duzenlenecek.CariKod;
                 d.textBox1.Text = duzenlenecek.Unvan;
                 //d.comboBox1.Text =duzenlenecek.Grup.ToString();
                // d.pictureBox1.Image = (byte[])duzenlenecek.Resim;
