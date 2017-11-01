@@ -78,7 +78,18 @@ namespace CariHesapTakibi
 
         private void btn_CariHesabi_Click(object sender, EventArgs e)
         {
-            new Cari_Hesabı().Show();
-        }
+            CariHesapRepository cariRep = new CariHesapRepository();
+            HesapHareketRepository hareketRep = new HesapHareketRepository();
+            Cari_Hesabı form = new Cari_Hesabı();
+            int CHHno = (int)dataGridView1.SelectedRows[0].Cells["CHHNo"].Value;
+            HesapHareket secilenHH = (HesapHareket)hareketRep.GetRecord(x=> x.CHHNo==CHHno);
+
+            form.secili = secilenHH.CariHesabi;
+
+            form.Show();
     }
+
+        }
+ 
+          
 }

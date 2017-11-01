@@ -18,33 +18,53 @@ namespace CariHesapTakibi
         {
             InitializeComponent();
         }
-
+        public CariHesap secili;
         private void Cari_Hesabı_Load(object sender, EventArgs e)
-        {/*
-            HesapHareketRepository hhr = new HesapHareketRepository();
-            hhr.CariGoruntule();
-            HesapHareket hh = new HesapHareket();
+        {
 
-            lbl_carihesap.Text = hh.CariHesabi.ToString();
-            lbl_evrakcinsi.Text = hh.Evrak.ToString();
-            lbl_islem.Text = hh.IslemTipi.ToString();*/
             HesapHareketRepository hhr = new HesapHareketRepository();
-
-            foreach (var item in hhr.Liste)
+            try
             {
+
+           
+            
                 HesapHareketListe hhl = new HesapHareketListe();
-             
-                lbl_evrakcinsi.Text = item.Evrak.EvrakCinsi.ToString();
-                lbl_carihesap.Text = item.CariHesabi.Unvan.ToString();
-                lbl_evrakno.Text = item.Evrak.EvrakNo.ToString();
-                lbl_islem.Text = item.IslemTipi.ToString();
-                lbl_evraktipi.Text = item.Evrak.EvrakTipi.ToString();
-                lbl_vadetarihi.Text = item.VadeTarihi.ToString();
-                lbl_vadegünü.Text = item.VadeGunu.ToString();
-                lbl_tutar.Text = item.Tutar.ToString();
-                lbl_islemtarihi.Text = item.IslemTarihi.ToString();
-                
+            txt_BankaAd.Text = secili.BankaHesapBilgileri.BankaAdi.ToString();
+            txt_BankaHesapNo.Text = secili.BankaHesapBilgileri.HesapNo.ToString();
+            txt_BankaSubeAd.Text = secili.BankaHesapBilgileri.Sube.ToString();
+            txt_BankaSubeKod.Text = secili.BankaHesapBilgileri.SubeKodu.ToString();
+            msk_BankaIban.Text = secili.BankaHesapBilgileri.IBAN.ToString();
+            txt_KefilAdSoyad.Text = secili.KefilBilgileri.AdSoyad.ToString();
+            txt_KefilAdres.Text = secili.KefilBilgileri.Adres.ToString();
+            msk_KefilTel.Text = secili.KefilBilgileri.Telefon.ToString();
+            txt_IletisimAdres.Text = secili.IletisimBilgileri.Adres.ToString();
+            txt_IletisimEmail.Text = secili.IletisimBilgileri.Eposta.ToString();
+            txt_IletisimWeb.Text = secili.IletisimBilgileri.Website.ToString();
+            msk_IletisimTel.Text = secili.IletisimBilgileri.Telefon.ToString();
+            txt_Ilgili1.Text = secili.IletisimBilgileri.IlgiliKisi.ToString();
+            msk_TC.Text = secili.TicariBilgiler.TCKimlikNo.ToString();
+            msk_VergiNo.Text = secili.TicariBilgiler.VergiNo.ToString();
+            txt_VergiDairesi.Text = secili.TicariBilgiler.VergiDairesi.ToString();
+            txt_KDVNo.Text = secili.TicariBilgiler.KDVNo.ToString();
+            if (secili.TicariBilgiler.SahisFirmasiMi)
+            {
+                chk_SahisFirma.Checked = true;
             }
+            else
+            {
+                chk_YabanciUyruk.Checked = true;
+            }
+            txt_Unvan.Text = secili.Unvan.ToString();
+            cmb_Grup.Text = secili.Grup.ToString();
+            p_Resim.ImageLocation = secili.Resim.ToString();
+            }
+            catch 
+            {
+
+            
+            }
+
+
 
         }
     }
