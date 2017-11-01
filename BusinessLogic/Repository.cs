@@ -62,7 +62,7 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
-        public List<HesapHareketiViewModel> HesapHareketiRapor()
+ public List<HesapHareketiViewModel> HesapHareketiRapor()
         {
             return Liste.Select(x => new HesapHareketiViewModel()
             {
@@ -87,5 +87,6 @@ namespace BusinessLogic
             }).ToList();
         }
 
+       
     }
 }

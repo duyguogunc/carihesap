@@ -105,6 +105,7 @@
             this.btn_CariHesabi.TabIndex = 1;
             this.btn_CariHesabi.Text = "Cari Hesabı";
             this.btn_CariHesabi.UseVisualStyleBackColor = true;
+            this.btn_CariHesabi.Click += new System.EventHandler(this.btn_CariHesabi_Click);
             // 
             // btn_YeniHesapHareketi
             // 
@@ -135,13 +136,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Duzenle;
         private System.Windows.Forms.Button btn_Sil;
         private System.Windows.Forms.Button btn_CariHesabi;
         private System.Windows.Forms.Button btn_YeniHesapHareketi;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }
