@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace CariHesapTakibi
         public Raporlar()
         {
             InitializeComponent();
+        }
+        HesapHareketRepository hh = new HesapHareketRepository();
+
+        private void Raporlar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
