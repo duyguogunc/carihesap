@@ -15,6 +15,7 @@ namespace CariHesapTakibi
 {
     public partial class HesapHareketDüzenle : Form
     {
+        
         internal HesapHareket SecilenHesap { get; set; }
         public HesapHareketDüzenle()
         {
@@ -60,15 +61,39 @@ namespace CariHesapTakibi
                 dtp_VadeTarihi.Value = SecilenHesap.VadeTarihi;
                 nm_VadeGunu.Value = SecilenHesap.VadeGunu;
                 txt_EvrakNo.Text = SecilenHesap.Evrak.EvrakNo.ToString();
-                //cb_EvrakCinsi.SelectedValue = SecilenHesap.Evrak.EvrakCinsi;
-                //cb_EvrakTipi.SelectedValue = SecilenHesap.Evrak.EvrakTipi;
-                
+
+
             }
         }
-
+        public int Chhno { get; set; }
         private void btn_Guncelle_Click(object sender, EventArgs e)
         {
+            HesapHareketRepository hhYonetici = new HesapHareketRepository();
+            HesapHareket hhkayit = hhYonetici.GetRecord(x => x.CHHNo ==Chhno);
+            hhkayit.CariKodu = Convert.ToInt32(cb_CariHesap.SelectedValue);
+            hhkayit.CariHesabi = (CariHesap)cb_CariHesap.SelectedItem;
+            hhkayit.Tutar = nm_Tutar.Value;
+            if (rb_NakitTahsilat.Checked)
+            {
+                hhkayit.IslemTipi = IslemTipi.NakitTahsilat;
+            }
+            else if (rb_NakitTediye.Checked)
+            {
+                hhkayit.IslemTipi = IslemTipi.NakitTediye;
+            }
+            hhkayit.IslemTarihi = dtp_IslemTarihi.Value;
+            hhkayit.VadeTarihi = dtp_VadeTarihi.Value;
+
+            hhkayit.VadeGunu = (int)nm_VadeGunu.Value;
+            hhkayit.Evrak = new Evrak();
+            hhkayit.Evrak.EvrakNo = txt_EvrakNo.Text == String.Empty ? 0 : Convert.ToInt32(txt_EvrakNo.Text);
+            hhkayit.Evrak.EvrakTipi = (EvrakTipi)cb_EvrakTipi.SelectedIndex + 1;
+            hhkayit.Evrak.EvrakCinsi = (EvrakCinsi)cb_EvrakCinsi.SelectedIndex + 1;
+
             
+            hhYonetici.Update(hhkayit);
+            Program.RefreshAllForms();
+            MessageBox.Show("Eklendi!");
         }
     }
 }

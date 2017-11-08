@@ -60,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(32, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "CariHesap";
             // 
@@ -70,7 +70,7 @@
             this.label2.Location = new System.Drawing.Point(32, 66);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 17);
+            this.label2.Size = new System.Drawing.Size(58, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tutar";
             // 
@@ -80,7 +80,7 @@
             this.label3.Location = new System.Drawing.Point(32, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
+            this.label3.Size = new System.Drawing.Size(58, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "İşlem";
             // 
@@ -90,7 +90,7 @@
             this.label4.Location = new System.Drawing.Point(32, 192);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 17);
+            this.label4.Size = new System.Drawing.Size(104, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "İşlem tarihi";
             // 
@@ -100,7 +100,7 @@
             this.label5.Location = new System.Drawing.Point(32, 254);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 17);
+            this.label5.Size = new System.Drawing.Size(108, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "VadeTarihi";
             // 
@@ -110,7 +110,7 @@
             this.label6.Location = new System.Drawing.Point(32, 308);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 17);
+            this.label6.Size = new System.Drawing.Size(107, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "VadeGünü";
             // 
@@ -119,7 +119,7 @@
             this.btn_Guncelle.Location = new System.Drawing.Point(609, 293);
             this.btn_Guncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Guncelle.Name = "btn_Guncelle";
-            this.btn_Guncelle.Size = new System.Drawing.Size(100, 28);
+            this.btn_Guncelle.Size = new System.Drawing.Size(100, 40);
             this.btn_Guncelle.TabIndex = 14;
             this.btn_Guncelle.Text = "Güncelle";
             this.btn_Guncelle.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@
             0,
             0});
             this.nm_Tutar.Name = "nm_Tutar";
-            this.nm_Tutar.Size = new System.Drawing.Size(160, 23);
+            this.nm_Tutar.Size = new System.Drawing.Size(160, 30);
             this.nm_Tutar.TabIndex = 7;
             // 
             // rb_NakitTediye
@@ -144,7 +144,7 @@
             this.rb_NakitTediye.Location = new System.Drawing.Point(144, 132);
             this.rb_NakitTediye.Margin = new System.Windows.Forms.Padding(4);
             this.rb_NakitTediye.Name = "rb_NakitTediye";
-            this.rb_NakitTediye.Size = new System.Drawing.Size(105, 21);
+            this.rb_NakitTediye.Size = new System.Drawing.Size(146, 29);
             this.rb_NakitTediye.TabIndex = 8;
             this.rb_NakitTediye.TabStop = true;
             this.rb_NakitTediye.Text = "Nakit Tediye";
@@ -167,7 +167,7 @@
             this.dtp_IslemTarihi.Location = new System.Drawing.Point(144, 192);
             this.dtp_IslemTarihi.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_IslemTarihi.Name = "dtp_IslemTarihi";
-            this.dtp_IslemTarihi.Size = new System.Drawing.Size(265, 23);
+            this.dtp_IslemTarihi.Size = new System.Drawing.Size(265, 30);
             this.dtp_IslemTarihi.TabIndex = 10;
             // 
             // dtp_VadeTarihi
@@ -175,7 +175,7 @@
             this.dtp_VadeTarihi.Location = new System.Drawing.Point(144, 246);
             this.dtp_VadeTarihi.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_VadeTarihi.Name = "dtp_VadeTarihi";
-            this.dtp_VadeTarihi.Size = new System.Drawing.Size(265, 23);
+            this.dtp_VadeTarihi.Size = new System.Drawing.Size(265, 30);
             this.dtp_VadeTarihi.TabIndex = 11;
             // 
             // nm_VadeGunu
@@ -183,7 +183,7 @@
             this.nm_VadeGunu.Location = new System.Drawing.Point(144, 298);
             this.nm_VadeGunu.Margin = new System.Windows.Forms.Padding(4);
             this.nm_VadeGunu.Name = "nm_VadeGunu";
-            this.nm_VadeGunu.Size = new System.Drawing.Size(160, 23);
+            this.nm_VadeGunu.Size = new System.Drawing.Size(160, 30);
             this.nm_VadeGunu.TabIndex = 12;
             // 
             // label7
@@ -192,7 +192,7 @@
             this.label7.Location = new System.Drawing.Point(8, 64);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 17);
+            this.label7.Size = new System.Drawing.Size(92, 25);
             this.label7.TabIndex = 0;
             this.label7.Text = "Evrak No";
             // 
@@ -202,7 +202,7 @@
             this.label8.Location = new System.Drawing.Point(8, 137);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 17);
+            this.label8.Size = new System.Drawing.Size(94, 25);
             this.label8.TabIndex = 1;
             this.label8.Text = "EvrakTipi";
             // 
@@ -212,7 +212,7 @@
             this.label9.Location = new System.Drawing.Point(8, 222);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 17);
+            this.label9.Size = new System.Drawing.Size(111, 25);
             this.label9.TabIndex = 2;
             this.label9.Text = "Evrak Cinsi";
             // 
@@ -221,7 +221,7 @@
             this.txt_EvrakNo.Location = new System.Drawing.Point(99, 60);
             this.txt_EvrakNo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_EvrakNo.Name = "txt_EvrakNo";
-            this.txt_EvrakNo.Size = new System.Drawing.Size(160, 23);
+            this.txt_EvrakNo.Size = new System.Drawing.Size(160, 30);
             this.txt_EvrakNo.TabIndex = 3;
             // 
             // cb_EvrakTipi
@@ -230,7 +230,7 @@
             this.cb_EvrakTipi.Location = new System.Drawing.Point(99, 137);
             this.cb_EvrakTipi.Margin = new System.Windows.Forms.Padding(4);
             this.cb_EvrakTipi.Name = "cb_EvrakTipi";
-            this.cb_EvrakTipi.Size = new System.Drawing.Size(160, 24);
+            this.cb_EvrakTipi.Size = new System.Drawing.Size(160, 33);
             this.cb_EvrakTipi.TabIndex = 4;
             // 
             // cb_EvrakCinsi
@@ -239,7 +239,7 @@
             this.cb_EvrakCinsi.Location = new System.Drawing.Point(99, 219);
             this.cb_EvrakCinsi.Margin = new System.Windows.Forms.Padding(4);
             this.cb_EvrakCinsi.Name = "cb_EvrakCinsi";
-            this.cb_EvrakCinsi.Size = new System.Drawing.Size(160, 24);
+            this.cb_EvrakCinsi.Size = new System.Drawing.Size(160, 33);
             this.cb_EvrakCinsi.TabIndex = 5;
             // 
             // groupBox1
@@ -265,15 +265,15 @@
             this.cb_CariHesap.Location = new System.Drawing.Point(144, 16);
             this.cb_CariHesap.Margin = new System.Windows.Forms.Padding(4);
             this.cb_CariHesap.Name = "cb_CariHesap";
-            this.cb_CariHesap.Size = new System.Drawing.Size(160, 24);
+            this.cb_CariHesap.Size = new System.Drawing.Size(160, 33);
             this.cb_CariHesap.TabIndex = 6;
             // 
             // HesapHareketDüzenle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(751, 329);
+            this.ClientSize = new System.Drawing.Size(765, 352);
             this.Controls.Add(this.btn_Guncelle);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.nm_VadeGunu);

@@ -47,9 +47,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 53);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(570, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(657, 286);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
@@ -63,7 +62,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(576, 311);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(663, 313);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel1
@@ -75,7 +74,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 44);
+            this.panel1.Size = new System.Drawing.Size(657, 44);
             this.panel1.TabIndex = 0;
             // 
             // btn_Duzenle
@@ -106,7 +105,6 @@
             this.btn_CariHesabi.TabIndex = 1;
             this.btn_CariHesabi.Text = "Cari Hesabı";
             this.btn_CariHesabi.UseVisualStyleBackColor = true;
-            this.btn_CariHesabi.Click += new System.EventHandler(this.btn_CariHesabi_Click);
             // 
             // btn_YeniHesapHareketi
             // 
@@ -120,9 +118,9 @@
             // 
             // HesapHareketListe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 311);
+            this.ClientSize = new System.Drawing.Size(663, 313);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.Margin = new System.Windows.Forms.Padding(6);

@@ -109,12 +109,6 @@
     <Compile Include="Raporlar.Designer.cs">
       <DependentUpon>Raporlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cari Hesabı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cari Hesabı.Designer.cs">
-      <DependentUpon>Cari Hesabı.cs</DependentUpon>
-    </Compile>
     <Compile Include="Yedekler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +163,6 @@
     </Compile>
     <EmbeddedResource Include="Raporlar.resx">
       <DependentUpon>Raporlar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cari Hesabı.resx">
-      <DependentUpon>Cari Hesabı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yedekler.resx">
       <DependentUpon>Yedekler.cs</DependentUpon>
