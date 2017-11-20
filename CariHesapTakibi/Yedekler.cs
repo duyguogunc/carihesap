@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLogic;
+using Entity.Models;
 
 namespace CariHesapTakibi
 {
@@ -15,6 +17,13 @@ namespace CariHesapTakibi
         public Yedekler()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BaseRepository<CariGrup> c = new CariGrupRepository();
+            c.YedekAl();
+            label1.Text = "yedek alındı";
         }
     }
 }

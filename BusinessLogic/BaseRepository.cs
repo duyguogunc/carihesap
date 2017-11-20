@@ -39,5 +39,11 @@ namespace BusinessLogic
         {
             Save();
         }
+
+        public void YedekAl()
+        {
+            base.YedekAl();
+        }
+        
     }
 }

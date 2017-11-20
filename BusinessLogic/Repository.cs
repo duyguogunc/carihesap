@@ -67,7 +67,7 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
- public List<HesapHareketiViewModel> HesapHareketiRaporAy(string ay)
+    public List<HesapHareketiViewModel> HesapHareketiRaporAy(string ay)
         {
             return Liste.Where(a=>a.IslemTarihi.Month.ToString()==ay).Select(x => new HesapHareketiViewModel()
             {
@@ -78,6 +78,19 @@ namespace BusinessLogic
                 IslemTipi = x.IslemTipi,
             }).ToList();
         }
+
+        public List<HesapHareketiViewModel> HesapHareketiRaporGun(DateTime gun)
+        {
+            return Liste.Where(a => a.IslemTarihi.Day == gun.Day && a.IslemTarihi.Month == gun.Month && a.IslemTarihi.Year == gun.Year).Select(x => new HesapHareketiViewModel()
+            {
+                CHHNo = x.CHHNo,
+                CariHesabi = x.CariHesabi.Unvan,
+                IslemTarihi = x.IslemTarihi,
+                Tutar = x.Tutar,
+                IslemTipi = x.IslemTipi,
+            }).ToList();
+        }
+
         public List<HesapHareketiViewModel> HesapHareketiRapor()
         {
             return Liste.Select(x => new HesapHareketiViewModel()

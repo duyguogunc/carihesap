@@ -45,5 +45,21 @@ namespace BusinessLogic
                 catch { }
             }
         }
+
+        public void YedekAl()
+        {
+            try
+            {
+                string okunan = "[";
+                okunan += File.ReadAllText("Entity.Models.CariGrup.json");
+                okunan += ",";
+                okunan += File.ReadAllText("Entity.Models.CariHesap.json");
+                okunan += ",";
+                okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
+                okunan += "]";
+                File.WriteAllText("Yedek.json",okunan);
+            }
+            catch { }
+        }
     }
 }
