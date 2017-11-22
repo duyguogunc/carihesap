@@ -43,6 +43,7 @@ namespace CariHesapTakibi
                 cr.YedektenYukle(yedek.Cariler);
                 hr.YedektenYukle(yedek.HesapHareketleri);
 
+
                 label1.Text = "Yedekten Yüklendi.";
             }
             catch
