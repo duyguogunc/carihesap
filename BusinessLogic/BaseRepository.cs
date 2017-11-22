@@ -44,6 +44,11 @@ namespace BusinessLogic
         {
             base.YedekAl();
         }
-        
+        public void YedektenYukle(List<T> yedek)
+        {
+            Liste.AddRange(yedek);
+            Save();
+        }
+
     }
 }

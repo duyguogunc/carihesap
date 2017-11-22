@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Web.Script.Serialization;
 using System.Reflection;
+using Entity.ViewModels;
+using Entity.Models;
 
 namespace BusinessLogic
 {
@@ -21,10 +23,10 @@ namespace BusinessLogic
             //System.Web.Extensions referansını ekledik.
             JavaScriptSerializer tercuman = new JavaScriptSerializer();
             string ceviri = tercuman.Serialize(Liste);
-
+            
             //CariHesap.json
             //HesapHareket.json
-            
+
             string dosyaAdi = typeof(T).ToString() + ".json";
             File.WriteAllText(dosyaAdi, ceviri);
         }
@@ -50,16 +52,53 @@ namespace BusinessLogic
         {
             try
             {
-                string okunan = "[";
-                okunan += File.ReadAllText("Entity.Models.CariGrup.json");
-                okunan += ",";
-                okunan += File.ReadAllText("Entity.Models.CariHesap.json");
-                okunan += ",";
-                okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
-                okunan += "]";
-                File.WriteAllText("Yedek.json",okunan);
+                //string okunan = "[";
+                //okunan += File.ReadAllText("Entity.Models.CariGrup.json");
+                //okunan += ",";
+                //okunan += File.ReadAllText("Entity.Models.CariHesap.json");
+                //okunan += ",";
+                //okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
+                //okunan += "]";
+                //File.WriteAllText("Yedek.json",okunan);
+
+                JavaScriptSerializer tercuman = new JavaScriptSerializer();
+                Yedek y = new Yedek();
+                y.HesapHareketleri = new HesapHareketRepository().Liste;
+                y.Cariler = new CariHesapRepository().Liste;
+                y.Gruplar = new CariGrupRepository().Liste;
+                string sonuc = tercuman.Serialize(y);
+                File.WriteAllText("Yedek.json", sonuc);
             }
             catch { }
         }
+
+        public Yedek YedekIceAktar()
+        {
+            try
+            {
+                //string okunan = "[";
+                //okunan += File.ReadAllText("Entity.Models.CariGrup.json");
+                //okunan += ",";
+                //okunan += File.ReadAllText("Entity.Models.CariHesap.json");
+                //okunan += ",";
+                //okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
+                //okunan += "]";
+                //File.WriteAllText("Yedek.json",okunan);
+
+                JavaScriptSerializer tercuman = new JavaScriptSerializer();
+                Yedek y = tercuman.Deserialize<Yedek>(File.ReadAllText("Yedek.json"));
+                string dosyaAdi = typeof(T).ToString() + ".json";
+                return y;
+                ////////////File.WriteAllText(dosyaAdi, );
+                //tüm kayıtları kontrol edelim
+                //olanlar kalsın (id lerden kontrol edebiliriz)
+                //olmayanlar eklensin
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        
     }
 }
