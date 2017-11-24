@@ -23,8 +23,16 @@ namespace CariHesapTakibi
         private void button1_Click(object sender, EventArgs e)
         {
             BaseRepository<CariGrup> c = new CariGrupRepository();
-            c.YedekAl();
-            label1.Text = "yedek alındı";
+            string path = "";
+            var fbd = new FolderBrowserDialog();
+            DialogResult d = fbd.ShowDialog();
+            if (d == DialogResult.OK)
+            {
+                path = fbd.SelectedPath;
+
+            }
+            c.YedekAl(path);
+            label1.Text = "Yedek alındı.";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,14 +45,16 @@ namespace CariHesapTakibi
                 CariHesapRepository cr = new CariHesapRepository();
                 HesapHareketRepository hr = new HesapHareketRepository();
 
-                var yedek = c.YedekIceAktar();
-
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "JSON Files (*.JSON)|*.JSON";
+                
+                ofd.ShowDialog();
+                string s = ofd.FileName;
+                var yedek = c.YedekIceAktar(s);
                 gr.YedektenYukle(yedek.Gruplar);
                 cr.YedektenYukle(yedek.Cariler);
                 hr.YedektenYukle(yedek.HesapHareketleri);
-
-
-                label1.Text = "Yedekten Yüklendi.";
+                label1.Text = "Yedekten yüklendi.";
             }
             catch
             {

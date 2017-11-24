@@ -40,9 +40,9 @@ namespace BusinessLogic
             Save();
         }
 
-        public void YedekAl()
+        public void YedekAl(string path)
         {
-            base.YedekAl();
+            base.YedekAl(path);
         }
         public void YedektenYukle(List<T> yedek)
         {

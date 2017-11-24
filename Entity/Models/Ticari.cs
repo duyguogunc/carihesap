@@ -57,7 +57,7 @@ namespace Entity.Models
             }
             set
             {
-                if (VadeTarihi == DateTime.MinValue & value!=0)
+                if (VadeTarihi == DateTime.MinValue && value!=0)
                     VadeTarihi = IslemTarihi.AddDays(value);
                 
             }

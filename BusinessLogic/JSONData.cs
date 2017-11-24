@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
@@ -48,51 +47,29 @@ namespace BusinessLogic
             }
         }
 
-        public void YedekAl()
+        public void YedekAl(string path)
         {
             try
             {
-                //string okunan = "[";
-                //okunan += File.ReadAllText("Entity.Models.CariGrup.json");
-                //okunan += ",";
-                //okunan += File.ReadAllText("Entity.Models.CariHesap.json");
-                //okunan += ",";
-                //okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
-                //okunan += "]";
-                //File.WriteAllText("Yedek.json",okunan);
-
                 JavaScriptSerializer tercuman = new JavaScriptSerializer();
                 Yedek y = new Yedek();
                 y.HesapHareketleri = new HesapHareketRepository().Liste;
                 y.Cariler = new CariHesapRepository().Liste;
                 y.Gruplar = new CariGrupRepository().Liste;
                 string sonuc = tercuman.Serialize(y);
-                File.WriteAllText("Yedek.json", sonuc);
+                File.WriteAllText(path+"\\Yedek.json", sonuc);
             }
             catch { }
         }
 
-        public Yedek YedekIceAktar()
+        public Yedek YedekIceAktar(string path)
         {
             try
             {
-                //string okunan = "[";
-                //okunan += File.ReadAllText("Entity.Models.CariGrup.json");
-                //okunan += ",";
-                //okunan += File.ReadAllText("Entity.Models.CariHesap.json");
-                //okunan += ",";
-                //okunan += File.ReadAllText("Entity.Models.HesapHareket.json");
-                //okunan += "]";
-                //File.WriteAllText("Yedek.json",okunan);
-
                 JavaScriptSerializer tercuman = new JavaScriptSerializer();
-                Yedek y = tercuman.Deserialize<Yedek>(File.ReadAllText("Yedek.json"));
-                string dosyaAdi = typeof(T).ToString() + ".json";
+                Yedek y = tercuman.Deserialize<Yedek>(File.ReadAllText(path));
                 return y;
-                ////////////File.WriteAllText(dosyaAdi, );
-                //tüm kayıtları kontrol edelim
-                //olanlar kalsın (id lerden kontrol edebiliriz)
-                //olmayanlar eklensin
+                
             }
             catch
             {

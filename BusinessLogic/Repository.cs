@@ -67,9 +67,9 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
-    public List<HesapHareketiViewModel> HesapHareketiRaporAy(string ay)
+    public List<HesapHareketiViewModel> HesapHareketiRaporAy(string ay,string yil)
         {
-            return Liste.Where(a=>a.IslemTarihi.Month.ToString()==ay).Select(x => new HesapHareketiViewModel()
+            return Liste.Where(a=>a.IslemTarihi.Month.ToString()==ay && a.IslemTarihi.Year.ToString()==yil).Select(x => new HesapHareketiViewModel()
             {
                 CHHNo = x.CHHNo,
                 CariHesabi = x.CariHesabi.Unvan,
