@@ -182,9 +182,15 @@
             // 
             this.nm_VadeGunu.Location = new System.Drawing.Point(144, 298);
             this.nm_VadeGunu.Margin = new System.Windows.Forms.Padding(4);
+            this.nm_VadeGunu.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.nm_VadeGunu.Name = "nm_VadeGunu";
             this.nm_VadeGunu.Size = new System.Drawing.Size(160, 30);
             this.nm_VadeGunu.TabIndex = 12;
+            this.nm_VadeGunu.ValueChanged += new System.EventHandler(this.nm_VadeGunu_ValueChanged);
             // 
             // label7
             // 

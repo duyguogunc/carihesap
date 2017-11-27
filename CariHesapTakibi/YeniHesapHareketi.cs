@@ -76,5 +76,11 @@ namespace CariHesapTakibi
             Program.RefreshAllForms();
             MessageBox.Show("Eklendi!");
         }
+
+        private void nm_vadegun_ValueChanged(object sender, EventArgs e)
+        {
+            dtp_vadetarih.Value = ((DateTime)dtp_islemtarih.Value).AddDays((double)nm_vadegun.Value);
+            dtp_islemtarih.Refresh();
+        }
     }
 }

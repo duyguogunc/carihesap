@@ -76,6 +76,7 @@ namespace BusinessLogic
                 IslemTarihi = x.IslemTarihi,
                 Tutar = x.Tutar,
                 IslemTipi = x.IslemTipi,
+                
             }).ToList();
         }
 
@@ -100,6 +101,7 @@ namespace BusinessLogic
                 IslemTarihi = x.IslemTarihi,
                 Tutar = x.Tutar,
                 IslemTipi = x.IslemTipi,
+                VadeGunu=x.VadeGunu
             }).ToList();
         }
         public void CariGoruntule()

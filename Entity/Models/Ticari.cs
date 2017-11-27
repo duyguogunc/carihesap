@@ -53,13 +53,13 @@ namespace Entity.Models
         {
             get
             {
-                return (int)(VadeTarihi - IslemTarihi).TotalDays;
+                return _vadeGunu;
             }
             set
             {
                 if (VadeTarihi == DateTime.MinValue && value!=0)
                     VadeTarihi = IslemTarihi.AddDays(value);
-                
+                _vadeGunu = value;
             }
         }
 
