@@ -105,6 +105,7 @@
             this.btn_CariHesabi.TabIndex = 1;
             this.btn_CariHesabi.Text = "Cari Hesabı";
             this.btn_CariHesabi.UseVisualStyleBackColor = true;
+            this.btn_CariHesabi.Click += new System.EventHandler(this.btn_CariHesabi_Click);
             // 
             // btn_YeniHesapHareketi
             // 
@@ -118,7 +119,7 @@
             // 
             // HesapHareketListe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 313);
             this.Controls.Add(this.tableLayoutPanel1);

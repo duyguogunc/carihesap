@@ -94,6 +94,12 @@
     <Compile Include="HesapHareketDüzenle.Designer.cs">
       <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
     </Compile>
+    <Compile Include="HesapHareketleriCarisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHareketleriCarisi.Designer.cs">
+      <DependentUpon>HesapHareketleriCarisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="HesapHareketListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HesapHareketDüzenle.resx">
       <DependentUpon>HesapHareketDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapHareketleriCarisi.resx">
+      <DependentUpon>HesapHareketleriCarisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HesapHareketListe.resx">
       <DependentUpon>HesapHareketListe.cs</DependentUpon>

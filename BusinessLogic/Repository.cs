@@ -41,11 +41,6 @@ namespace BusinessLogic
             }).ToList();
         }
     }
-    
-
-        
-    
-
     public class CariGrupRepository : BaseRepository<CariGrup>
     {
         public override void Add(CariGrup record)
