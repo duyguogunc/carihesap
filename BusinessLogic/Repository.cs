@@ -18,7 +18,7 @@ namespace BusinessLogic
                 record.CariKod = 1;
             base.Add(record);
         }
-      
+
         public List<CariHesapViewModel> CariRapor()
         {
             /*
@@ -40,6 +40,23 @@ namespace BusinessLogic
                 Unvan = x.Unvan
             }).ToList();
         }
+        public HesapHareketiCariViewModel HesapHareketiCari(CariHesap gelenHesap)
+        {
+            HesapHareketiCariViewModel h = new HesapHareketiCariViewModel();
+            var gelen = Liste.Where(x => x.CariKod == gelenHesap.CariKod).FirstOrDefault();
+            //return Liste.Select(x => new HesapHareketiCariViewModel()
+            
+            h.CariKod = gelen.CariKod;
+            h.Unvan = gelen.Unvan;            
+            h.Grup = gelen.Grup.GrupAdi;
+            h.TicariBilgiler = gelen.TicariBilgiler.VergiNo;
+            h.IletisimBilgileri = gelen.IletisimBilgileri.IlgiliKisi;
+            h.BankaHesapBilgileri = gelen.BankaHesapBilgileri.IBAN;
+            h.KefilBilgileri = gelen.KefilBilgileri.AdSoyad;
+            return h;      
+            //).ToList();
+        }
+    
     }
     public class CariGrupRepository : BaseRepository<CariGrup>
     {
@@ -62,6 +79,7 @@ namespace BusinessLogic
                 record.CHHNo = 1;
             base.Add(record);
         }
+       
     public List<HesapHareketiViewModel> HesapHareketiRaporAy(string ay,string yil)
         {
             return Liste.Where(a=>a.IslemTarihi.Month.ToString()==ay && a.IslemTarihi.Year.ToString()==yil).Select(x => new HesapHareketiViewModel()
